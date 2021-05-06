@@ -4,7 +4,7 @@
 #
 # Author:      TANU
 #
-# Created:     08/02/2021
+# Created:     06/02/2021
 # Copyright:   (c) TANU 2021
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
@@ -14,9 +14,15 @@ def main():
 
 if __name__ == '__main__':
     main()
-text = 'Text with special character (0#$%^*UIJKNHJCH^)'
-from string import printable
-if set(text).difference(printable):
-    print('Text has special characters.')
-else:
-    print("Text does not have special characters.")
+def Fibonacci(n):
+    if n<0:
+        print("Incorrect input")
+    # First Fibonacci number = 0
+    elif n==1:
+        return 0
+    # Second Fibonacci number = 1
+    elif n==2:
+        return 1
+    else:
+        return Fibonacci(n-1)+Fibonacci(n-2)
+print(Fibonacci(9))

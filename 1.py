@@ -4,7 +4,7 @@
 #
 # Author:      TANU
 #
-# Created:     08/02/2021
+# Created:     06/02/2021
 # Copyright:   (c) TANU 2021
 # Licence:     <your licence>
 #-------------------------------------------------------------------------------
@@ -14,5 +14,12 @@ def main():
 
 if __name__ == '__main__':
     main()
-file = open("eg.txt", "r")
-print (file.read())
+def maximum(a, b):
+
+    if a >= b:
+        return a
+    else:
+        return b
+a = 2
+b = 4
+print(maximum(a, b))
